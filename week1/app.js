@@ -87,8 +87,8 @@ if (typeof(varNull) === typeof(varUndefined)) {
 }
 
 //Ans 9. Number Division and Mod (Remainder of Division)
-var x = 7;
-console.log("The value of " + x + " % " + 6 + " is: " + (x % 6));
+var myX = 7;
+console.log("The value of " + myX + " % " + 6 + " is: " + (myX % 6));
 console.log("The value of (10 % 2) is: " + (10 % 4));
 console.log("The value of (16 % 6 ) is: " + (18 % 6));
 console.log("The value of (29 % 10) is: " + (19 % 10));
@@ -96,5 +96,5 @@ console.log("The value of (29 % 10) is: " + (19 % 10));
 //10.More javascript
 var array = ["HackYourFuture", 180, null, undefined , 258.95];
 console.log(array);
-console.log(typeof (4 / 5));
+console.log(typeof(4 / 5));
 console.log(10 / 0 === 6 / 0);
