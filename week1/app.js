@@ -68,19 +68,19 @@ console.log(typeof(varBoolean));
 console.log(typeof(varNull));
 console.log(typeof(varUndefined));
 
-if (typeof varString == typeof varBoolean) {
+if (typeof(varString) === typeof(varBoolean)) {
   console.log(varString + " and " + varBoolean + " are the SAME TYPE");
 } else {
   console.log(varString + " and " + varFloat + " are NOT the SAME TYPE");
 }
 
-if (typeof varFloat == typeof varBoolean) {
+if (typeof(varFloat) === typeof(varBoolean)) {
   console.log(varFloat + " and " + varBoolean + " are the SAME TYPE");
 } else {
   console.log(varFloat + " and " + varBoolean + " are NOT the SAME TYPE");
 }
 
-if (typeof varNull == typeof varUndefined) {
+if (typeof(varNull) === typeof(varUndefined)) {
   console.log(varNull + " and " + varUndefined + " are the SAME TYPE");
 } else {
   console.log(varNull + " and " + varUndefined + " are NOT the SAME TYPE");
