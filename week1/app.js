@@ -62,11 +62,11 @@ console.log("I think the type of varBoolean is: Boolean ");
 console.log("I think the type of varNull is: Object ");
 console.log("I think the type of varUndefined is: Undefined ");
 
-console.log(typeof varString);
-console.log(typeof varFloat);
-console.log(typeof varBoolean);
-console.log(typeof varNull);
-console.log(typeof varUndefined);
+console.log(typeof(varString));
+console.log(typeof(varFloat));
+console.log(typeof(varBoolean));
+console.log(typeof(varNull));
+console.log(typeof(varUndefined));
 
 if (typeof varString == typeof varBoolean) {
   console.log(varString + " and " + varBoolean + " are the SAME TYPE");
@@ -88,10 +88,10 @@ if (typeof varNull == typeof varUndefined) {
 
 //Ans 9. Number Division and Mod (Remainder of Division)
 var x = 7;
-console.log("The value of " + x + " % " + 3 + " is: " + (x % 3));
-console.log("The value of (10 % 2) is: " + (10 % 2));
-console.log("The value of (16 % 6 ) is: " + (16 % 6));
-console.log("The value of (29 % 10) is: " + (29 % 10));
+console.log("The value of " + x + " % " + 6 + " is: " + (x % 6));
+console.log("The value of (10 % 2) is: " + (10 % 4));
+console.log("The value of (16 % 6 ) is: " + (18 % 6));
+console.log("The value of (29 % 10) is: " + (19 % 10));
 
 //10.More javascript
 var array = ["HackYourFuture", 180, null, undefined , 258.95];
