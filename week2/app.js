@@ -1,12 +1,13 @@
 //App run by init
 function init() {
-  stringChallenge();
-  arraysChallenge();
-  sum(10, 15, 36);
-  colorCar("Black");
-  myData(farhan);
+  stringChallenge(); // 1.
+  arraysChallenge(); //1.1
+  sum(10, 15, 36); //2.
+  colorCar("Black"); //3.
+  myData(farhan); //
   vehicleType("Blue", 2);
   oneLineIf();
+  vehicle("Blue",2,2);
 }
 
 //String  Challenges !
@@ -78,5 +79,24 @@ function vehicleType(color, type) {
 function oneLineIf() {
   3 === 3 ? console.log("Yes") : console.log("No");
 }
+
+//6.
+function vehicle(color, type, state){
+  if(state === 1 && type === 1) {
+   console.log(`A ${color} new car`);
+  } else if (state === 1 && type === 2){
+    //do
+    console.log(`A ${color} new bike`);
+  }
+  else if(state === 2 && type === 1){
+    //do
+    console.log(`A ${color} used car`);
+  }
+  else if(state === 2 && type === 2){
+    //do
+    console.log(`A ${color} used bike`);
+  }
+}
+
 
 init();

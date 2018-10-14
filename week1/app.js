@@ -20,7 +20,7 @@ console.log(`The value of X is ${stringX}\nThe value of Y is ${stringY}`);
 //Ans 5. maximum number
 var z = 7.25;
 console.log(z);
-var a = parseInt(z);
+var a = Math.round(z);
 console.log(a);
 var highestValue = Math.max(a, z);
 console.log(
@@ -68,23 +68,32 @@ console.log(typeof(varBoolean));
 console.log(typeof(varNull));
 console.log(typeof(varUndefined));
 
-if (typeof(varString) === typeof(varBoolean)) {
-  console.log(varString + " and " + varBoolean + " are the SAME TYPE");
-} else {
-  console.log(varString + " and " + varFloat + " are NOT the SAME TYPE");
+function haveSameType(a,b,c,d,e){
+  if (typeof(a) === typeof(b)) {
+    console.log(a + " and " + b + " are the SAME TYPE");
+  } else {
+    console.log(a + " and " + b + " are NOT the SAME TYPE");
+  }
+  
+  if (typeof(c) === typeof(b)) {
+    console.log(c + " and " + b + " are the SAME TYPE");
+  } else {
+    console.log(c + " and " + b + " are NOT the SAME TYPE");
+  }
+  
+  if (typeof(d) === typeof(e)) {
+    console.log(d + " and " + e + " are the SAME TYPE");
+  } else {
+    console.log(d + " and " + e + " are NOT the SAME TYPE");
+  }
+
 }
 
-if (typeof(varFloat) === typeof(varBoolean)) {
-  console.log(varFloat + " and " + varBoolean + " are the SAME TYPE");
-} else {
-  console.log(varFloat + " and " + varBoolean + " are NOT the SAME TYPE");
-}
+haveSameType(varString, varBoolean, varFloat, varNull, varUndefined);
 
-if (typeof(varNull) === typeof(varUndefined)) {
-  console.log(varNull + " and " + varUndefined + " are the SAME TYPE");
-} else {
-  console.log(varNull + " and " + varUndefined + " are NOT the SAME TYPE");
-}
+
+
+
 
 //Ans 9. Number Division and Mod (Remainder of Division)
 var myX = 7;
@@ -92,9 +101,15 @@ console.log("The value of " + myX + " % " + 6 + " is: " + (myX % 6));
 console.log("The value of (10 % 2) is: " + (10 % 4));
 console.log("The value of (16 % 6 ) is: " + (18 % 6));
 console.log("The value of (29 % 10) is: " + (19 % 10));
+// What modus can do?
+for(let i = 0; i < 100;i++){
+  i % 2 === 0 ? console.log("Even value " + i) : console.log("Odd Value " + i);
+}
+
 
 //10.More javascript
-var array = ["HackYourFuture", 180, null, undefined , 258.95];
+var array = ["HackYourFuture", 180, null, undefined , 258.95, false];
+console.log(10 / 0 === 6 / 0);
 console.log(array);
 console.log(typeof(4 / 5));
-console.log(10 / 0 === 6 / 0);
+
