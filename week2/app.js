@@ -7,7 +7,7 @@ function init() {
   myData(farhan); //
   vehicleType("Blue", 2);
   oneLineIf();
-  vehicle("Blue",2,2);
+  vehicle("Blue", 2, 2);
 }
 
 //String  Challenges !
@@ -81,8 +81,16 @@ function oneLineIf() {
 }
 
 //6.
-function vehicle(color, type, state){
-  if(state === 1 && type === 1) {
+function vehicle(color, type, state) {
+  type === 1
+    ? (type = "car")
+    : type === 2
+      ? (type = "motorbike")
+      : (type = "Other Vechile");
+  state <= 1 ? (state = "new") : (state = "used");
+  console.log(`A ${color} ${state} ${type}`);
+
+  /* if(state === 1 && type === 1) {
    console.log(`A ${color} new car`);
   } else if (state === 1 && type === 2){
     //do
@@ -95,8 +103,15 @@ function vehicle(color, type, state){
   else if(state === 2 && type === 2){
     //do
     console.log(`A ${color} used bike`);
-  }
+  } */
 }
 
+//7.
+let list = ["Cars", "Bikes", "Carvans"];
+console.log(list.toString());
+
+//8.
+let list = ["Cars", "Bikes", "Carvans"];
+console.log(list[2]);
 
 init();
