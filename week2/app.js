@@ -61,7 +61,7 @@ let farhan = {
 };
 function myData(myData) {
   console.log(
-    `My name is ${myData.name} and I\'m ${
+    `My name is ${myData.name} and I'm ${
       myData.age
     } years old.\nMy profession is ${myData.profession}.`
   );
