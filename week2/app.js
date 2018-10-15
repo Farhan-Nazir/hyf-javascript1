@@ -9,6 +9,7 @@ function init() {
   oneLineIf();
   vehicle("Blue", 2, 2);
   vehicleList("Pink", 0, 2);
+  ad();
 }
 
 //String  Challenges !
@@ -108,7 +109,7 @@ function vehicle(color, type, state) {
 }
 
 //7.
-let list = ["Cars", "Bikes", "Carvans", "Scooters", "Bus"];
+let list = ["Car", "Bike", "Carvan", "Scooter", "Bus"];
 console.log(list.toString());
 
 //8.
@@ -119,5 +120,29 @@ function vehicleList(color, type, state) {
   state <= 1 ? (state = "new") : (state = "used");
   console.log(`A ${color} ${state} ${list[type]}`);
 }
+
+//10.
+function pluralize(word) {
+  return word[word.length - 1] === "s" ? word + "es" : word + "s";
+}
+
+function ad() {
+  let adText = "Amazing Joe's Garage, we service ";
+
+  for (let i = 0; i < list.length; i++) {
+    adText += pluralize(list[i]);
+    if (i < list.length - 2) {
+      adText += ", ";
+    } else if (i === list.length - 2) {
+      adText += " and ";
+    }
+  }
+
+  console.log(adText + ".");
+}
+
+list.push("Truck");
+
+// Task 11. Adding extra element to the array
 
 init();
