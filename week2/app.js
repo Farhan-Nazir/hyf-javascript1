@@ -140,9 +140,7 @@ function ad() {
 
   console.log(adText + ".");
 }
-
+//11.
 list.push("Truck");
-
-// Task 11. Adding extra element to the array
 
 init();
