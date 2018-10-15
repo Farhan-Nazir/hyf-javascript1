@@ -4,10 +4,11 @@ function init() {
   arraysChallenge(); //1.1
   sum(10, 15, 36); //2.
   colorCar("Black"); //3.
-  myData(farhan); //
+  myData(farhan); //4
   vehicleType("Blue", 2);
   oneLineIf();
   vehicle("Blue", 2, 2);
+  vehicleList("Pink", 0, 2);
 }
 
 //String  Challenges !
@@ -107,11 +108,16 @@ function vehicle(color, type, state) {
 }
 
 //7.
-let list = ["Cars", "Bikes", "Carvans"];
+let list = ["Cars", "Bikes", "Carvans", "Scooters", "Bus"];
 console.log(list.toString());
 
 //8.
-let list = ["Cars", "Bikes", "Carvans"];
 console.log(list[2]);
+
+//9.
+function vehicleList(color, type, state) {
+  state <= 1 ? (state = "new") : (state = "used");
+  console.log(`A ${color} ${state} ${list[type]}`);
+}
 
 init();
