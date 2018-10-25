@@ -92,7 +92,7 @@ function vehicle(color, type, state) {
     ? (type = "car")
     : type === 2
       ? (type = "motorbike")
-      : (type = "Other Vechile");
+      : (type = "other Vechile");
   state <= 1 ? (state = "new") : (state = "used");
   console.log(`A ${color} ${state} ${type}`);
 
